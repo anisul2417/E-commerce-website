@@ -1,0 +1,283 @@
+/* small device */
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+    
+}
+/* medium device */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+
+@font-face {
+    font-family: "Exo", sans-serif;
+    src: url(../fonts/Exo-Bold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+ul,li,ol {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    line-height: 0.8;
+}
+
+.sec-head {    
+    text-align: center;
+    margin-bottom: 50px;
+}
+img {
+    vertical-align: middle;
+}
+body,html {
+    scroll-behavior: smooth;
+}
+
+/* all common css */
+
+/* menu start */
+nav .header-main {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 40px; */
+    padding: 20px 0;
+}
+nav .header-logo img {
+    width: 100%;
+}
+nav .header-text button {
+    border-radius: 120px;
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    -ms-border-radius: 120px;
+    -o-border-radius: 120px;
+}
+nav .form {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+nav input[type="search"] {
+    width: 360px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-size: 14px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 5px 30px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 0.8;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #757575;
+    outline: 0;
+    box-shadow: none;
+}
+.navbar-brand img {
+    height: 50px
+}
+.navbar-toggler-icon {
+    background-image: url(../Img/menu.png);
+}
+.navbar-toggler {
+    border: 2px solid silver;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/* menu end */
+
+/* banner start */
+#home {
+    padding: 130px 0 120px;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Img/model_1_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.home-center {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 40px;
+}
+.home-center h1 {
+    font-family: "Exo", sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+}
+.home-center p {
+    font-family: "Exo", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.home-btn {
+    display: flex;
+    gap: 30px;
+}
+.home-btn .btn-shop {
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 25px;
+    padding: 5px 15px;
+    transition: all linear 0.3s;
+}
+.home-btn .btn-shop:hover {
+    color: #000;
+    background-color: #fff;
+}
+.home-btn .btn-member {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    font-size: 25px;
+    padding: 5px 15px;
+    /* place-items: center; */
+    transition: all linear 0.3s;
+}
+.home-btn .btn-member:hover {
+    color: #fff;
+    background-color: transparent;
+}
+#product {
+    padding: 90px 0 120px;
+}
+#product h5 {
+    margin-bottom: 20px;
+}
+#product h2 {
+    margin-bottom: 25px;
+}
+
+.hoverimg {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.hoverimg img {
+    transition: all linear 0.3s;
+}
+.hoverimg:hover img {
+    transform: scale(1.1);
+}
+#product h4 {
+    margin-bottom: 15px;
+}
+.card-body {
+    text-align: center;
+}
+
+#product .card-text {
+    margin-bottom: 20px;
+}
+.btn-box{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+}
+.btn-cart {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all linear 0.3s;
+}
+.btn-cart:hover {
+    color: #000;
+    background-color: transparent;
+    border: 2px solid  #000;
+}
+.btn-view {
+    color: #000;
+    border: 2px solid #000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: all linear 0.3s;
+}
+.btn-view:hover {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid  #fff;
+}
+
+/* banner end */
+
+/* service start */
+#service {
+    padding: 90px 0 120px;
+}
+/* service end */
+
+/* testimonial start */
+#testimonial {
+    padding: 80px 0 120px;
+}
+.carousel-inner {
+    text-align: center;
+}
+.carousel-inner .carousel-item img {
+    border-radius: 50%;
+    width: 30%;
+}
+/* testimonial end */
+
+/* contact start */
+#contact {
+    padding: 90px 0 120px;
+}
+.form-control {
+    padding: 8px 6px;
+    font-size: 15px;
+}
+/* contact end */
+
+/* footer start */
+#footer {
+    padding: 90px 0 120px;
+    margin-bottom: 150px;
+}
+#footer h2 {
+    font-size: 18px;
+}
+/* footer end */
+
+
+
+/* .exo-uniquifier {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
